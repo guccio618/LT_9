@@ -1,6 +1,6 @@
 
 public class Lecture6_LinkedList_08_Linked_List_Cycle_II {
-	public ListNode detectCycle(ListNode head) {  h
+	public ListNode detectCycle(ListNode head) {  
         if (head == null || head.next==null) {
             return null;
         }
