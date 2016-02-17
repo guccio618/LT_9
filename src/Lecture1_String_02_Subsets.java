@@ -3,7 +3,8 @@ import java.util.Arrays;
 
 
 public class Lecture1_String_02_Subsets {
-	public ArrayList<ArrayList<Integer>> subsets(int[] nums) {
+	// DFS: 时间复杂度为答案的个数*构造每个答案的时间， time complexity: O(2^n * n)
+	public ArrayList<ArrayList<Integer>> subsets(int[] nums) { 
         ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
         if(nums == null || nums.length == 0){
             return res;

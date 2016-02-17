@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 
 public class Lecture1_String_04_Permutations {
+	// DFS: 时间复杂度为答案的个数*构造每个答案的时间， time complexity: O(n! * n)
 	public ArrayList<ArrayList<Integer>> permute(ArrayList<Integer> nums) {
         ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
         if(nums == null || nums.size() == 0){

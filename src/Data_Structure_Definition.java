@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class Data_Structure_Definition {
 
@@ -28,3 +30,17 @@ class RandomListNode {
 	RandomListNode next, random;
 	RandomListNode(int x) { this.label = x; }
 }
+
+//Definition for undirected graph.
+class UndirectedGraphNode {
+	int label;
+	ArrayList<UndirectedGraphNode> neighbors;
+	UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
+};
+
+//Definition for Directed graph.
+class DirectedGraphNode {
+	int label;
+	ArrayList<DirectedGraphNode> neighbors;
+	DirectedGraphNode(int x) { label = x; neighbors = new ArrayList<DirectedGraphNode>(); }
+};
